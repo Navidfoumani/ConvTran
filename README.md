@@ -24,13 +24,13 @@ This code has been tested with `Python 3.7` and `3.8`.
 To see all command options with explanations, run: `python main.py --help`
 In 'configuration.py' you can select the datasets and modify the model parameters.
 For example:
-```bash
-self.parser.add_argument('--epochs', type=int, default=10, help='Number of training epochs')
-```bash
+
+'self.parser.add_argument('--epochs', type=int, default=10, help='Number of training epochs')'
+
 or you can set the paprameters:
-```bash
-python main.py --epochs 1500 --data_dir Datasets/UEA/Heartbeat
-```
+
+'python main.py --epochs 1500 --data_dir Datasets/UEA/Heartbeat'
+
 ## Credits
 
 Some Part of Code adapted from [TST](https://github.com/gzerveas/mvts_transformer).
