@@ -25,11 +25,11 @@ To see all command options with explanations, run: `python main.py --help`
 In 'configuration.py' you can select the datasets and modify the model parameters.
 For example:
 
-'self.parser.add_argument('--epochs', type=int, default=10, help='Number of training epochs')'
+`self.parser.add_argument('--epochs', type=int, default=10, help='Number of training epochs')`
 
 or you can set the paprameters:
 
-'python main.py --epochs 1500 --data_dir Datasets/UEA/Heartbeat'
+`python main.py --epochs 1500 --data_dir Datasets/UEA/Heartbeat`
 
 ## Credits
 
