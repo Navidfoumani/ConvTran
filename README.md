@@ -33,4 +33,4 @@ or you can set the paprameters:
 
 ## Credits
 
-Some Part of Code adapted from [TST](https://github.com/gzerveas/mvts_transformer).
+Some Part of Code are taken from [TST](https://github.com/gzerveas/mvts_transformer).
