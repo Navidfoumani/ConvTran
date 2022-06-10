@@ -1,2 +1,36 @@
-# ConvTran
-This is a PyTorch implementation of ConvTran
+# ConvTran: Tight Integration of Convolutions and Transformers for MTSC
+This is a PyTorch implementation of ConvTran : Deep Learning for Multivariate Time Series Classification Through Tight Integration of Convolutions and Transformers
+
+
+### Get data from UEA Archive and HAR and Ford Challenge
+Download dataset files and place them into the specified folder
+UEA: http://www.timeseriesclassification.com/Downloads/Archives/Multivariate2018_ts.zip
+Copy the datasets folder to: Datasets/UEA/
+HAR : https://www.cis.fordham.edu/wisdm/dataset.php
+Copy the ActivityRecognition.txt file to : Datasets/Segmentation/ActivityRecognition/
+Ford: https://www.kaggle.com/competitions/stayalert/data
+Copy the FordChallenge_TEST.csv and FordChallenge_Train.csv to : Datasets/Segmentation/FordChallenge
+
+## Setup
+
+_Instructions refer to Unix-based systems (e.g. Linux, MacOS)._
+
+This code has been tested with `Python 3.7` and `3.8`.
+
+`pip install -r requirements.txt`
+
+## Run
+
+To see all command options with explanations, run: `python main.py --help`
+In 'configuration.py' you can select the datasets and modify the model parameters.
+For example:
+```bash
+self.parser.add_argument('--epochs', type=int, default=10, help='Number of training epochs')
+```bash
+or you can set the paprameters:
+```bash
+python main.py --epochs 1500 --data_dir Datasets/UEA/Heartbeat
+```
+## Credits
+
+Some Part of Code adapted from [TST](https://github.com/gzerveas/mvts_transformer).
