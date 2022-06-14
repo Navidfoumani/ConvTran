@@ -6,8 +6,10 @@ This is a PyTorch implementation of ConvTran : Deep Learning for Multivariate Ti
 Download dataset files and place them into the specified folder
 UEA: http://www.timeseriesclassification.com/Downloads/Archives/Multivariate2018_ts.zip
 Copy the datasets folder to: Datasets/UEA/
+
 HAR : https://www.cis.fordham.edu/wisdm/dataset.php
 Copy the ActivityRecognition.txt file to : Datasets/Segmentation/ActivityRecognition/
+
 Ford: https://www.kaggle.com/competitions/stayalert/data
 Copy the FordChallenge_TEST.csv and FordChallenge_Train.csv to : Datasets/Segmentation/FordChallenge
 
