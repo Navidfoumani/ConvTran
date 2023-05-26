@@ -1,4 +1,8 @@
-# ConvTran: Tight Integration of Convolutions and Transformers for MTSC
+# ConvTran: Improving Position Encoding of Transformers for Multivariate Time Series Classification
+#### Authors: [Navid Mohammadi Foumani](https://www.linkedin.com/in/navid-foumani/), [Chang Wei Tan](https://changweitan.com/), [Geoffrey I. Webb](https://i.giwebb.com/), [Mahsa Salehi](https://research.monash.edu/en/persons/mahsa-salehi)
+
+#### ConvTran Paper: [Preprint](https://arxive.org/)
+## Overview 
 This is a PyTorch implementation of ConvTran : Deep Learning for Multivariate Time Series Classification Through Tight Integration of Convolutions and Transformers
 ![img](https://github.com/Navidfoumani/ConvTran/blob/e41fb4b387ec5c2351df4416fdd326dda7801a1c/Fig/ConvTran.png)
 
