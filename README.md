@@ -20,6 +20,28 @@ The original proposal of absolute position encoding was primarily intended for l
 <p align="justify">
 It is evident that higher embedding dimensions, such as 512 (indicated by the red thick line), provide a more accurate reflection of the similarity between different positions. Conversely, when employing lower embedding dimensions, such as 64 or 128 (represented by the thin blue and orange lines, respectively), the dot product does not consistently decrease as the distance between positions increases. This phenomenon, known as the "distance awareness" property, is present in higher dimensions but diminishes with lower embedding dimensions, such as 64.
 </p>
+<pre>
+<code>
+# Equation 13 page 11
+class timeAPE(nn.Module):
+    def __init__(self, d_model, dropout=0.1, max_len=1024, scale_factor=1.0):
+        super(timeAPE, self).__init__()
+        self.dropout = nn.Dropout(p=dropout)
+        pe = torch.zeros(max_len, d_model)  # positional encoding
+        position = torch.arange(0, max_len, dtype=torch.float).unsqueeze(1)
+        div_term = torch.exp(torch.arange(0, d_model, 2).float() * (-math.log(10000.0) / d_model))
+        pe[:, 0::2] = torch.sin((position * div_term)*(d_model/max_len))
+        pe[:, 1::2] = torch.cos((position * div_term)*(d_model/max_len))
+        pe = scale_factor * pe.unsqueeze(0)
+        self.register_buffer('pe', pe)  # this stores the variable in the state_dict (used for non-trainable variables)
+
+    def forward(self, x):
+        x = x + self.pe
+        return self.dropout(x)
+</code>
+</pre>
+
+
 #### efficient Relative Position Encoding (eRPE)
 This is a PyTorch implementation of ConvTran : Deep Learning for Multivariate Time Series Classification Through Tight Integration of Convolutions and Transformers
 <!-- ![img](https://github.com/Navidfoumani/ConvTran/blob/e41fb4b387ec5c2351df4416fdd326dda7801a1c/Fig/ConvTran.png) -->
