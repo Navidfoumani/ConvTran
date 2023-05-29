@@ -10,6 +10,12 @@ Attention models have the exceptional ability to capture long-range dependencies
 <p align="justify">
 The question of whether absolute position encoding, relative position encoding, or a combination of both is more suitable for capturing the sequential nature of time series data remains unresolved. To bridge this gap, our paper reviews existing absolute and relative position encoding methods applied in time series classification. Additionally, we propose two novel position encoding techniques: time Absolute Position Encoding (tAPE) and efficient Relative Position Encoding (eRPE).
 </p>
+
+### Key Idea of Position Encoding of Transformers for MTSC
+#### Time Absolute Position Encoding (tAPE)
+
+
+#### Efficient Relative Position Encoding (eRPE)
 This is a PyTorch implementation of ConvTran : Deep Learning for Multivariate Time Series Classification Through Tight Integration of Convolutions and Transformers
 <!-- ![img](https://github.com/Navidfoumani/ConvTran/blob/e41fb4b387ec5c2351df4416fdd326dda7801a1c/Fig/ConvTran.png) -->
 
