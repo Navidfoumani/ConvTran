@@ -1,6 +1,4 @@
-<center>
-## Improving Position Encoding of Transformers for Multivariate Time Series Classification (ConvTran)
-</center>
+## mproving Position Encoding of Transformers for Multivariate Time Series Classification (ConvTran)
 #### Authors: [Navid Mohammadi Foumani](https://www.linkedin.com/in/navid-foumani/), [Chang Wei Tan](https://changweitan.com/), [Geoffrey I. Webb](https://i.giwebb.com/), [Mahsa Salehi](https://research.monash.edu/en/persons/mahsa-salehi)
 
 #### ConvTran Paper: [Preprint](https://arxive.org/)
