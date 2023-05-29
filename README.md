@@ -12,10 +12,15 @@ The question of whether absolute position encoding, relative position encoding, 
 </p>
 
 ### Key Idea of Position Encoding of Transformers for MTSC
-#### Time Absolute Position Encoding (tAPE)
+#### time Absolute Position Encoding (tAPE)
+<p align="justify">
+The original proposal of absolute position encoding was primarily intended for language modeling, where position embeddings with high dimensions, such as 512 or 1024, are commonly utilized for inputs of length 512. The figure below illustrates the dot product between two sinusoidal positional embeddings at a distance of K, using different embedding dimensions.
+</p>
 
-
-#### Efficient Relative Position Encoding (eRPE)
+<p align="justify">
+It is evident that higher embedding dimensions, such as 512 (indicated by the red thick line), provide a more accurate reflection of the similarity between different positions. Conversely, when employing lower embedding dimensions, such as 64 or 128 (represented by the thin blue and orange lines, respectively), the dot product does not consistently decrease as the distance between positions increases. This phenomenon, known as the "distance awareness" property, is present in higher dimensions but diminishes with lower embedding dimensions, such as 64.
+</p>
+#### efficient Relative Position Encoding (eRPE)
 This is a PyTorch implementation of ConvTran : Deep Learning for Multivariate Time Series Classification Through Tight Integration of Convolutions and Transformers
 <!-- ![img](https://github.com/Navidfoumani/ConvTran/blob/e41fb4b387ec5c2351df4416fdd326dda7801a1c/Fig/ConvTran.png) -->
 
