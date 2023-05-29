@@ -23,7 +23,7 @@ It is evident that higher embedding dimensions, such as 512 (indicated by the re
 <pre>
 <code>
 # Equation 13 page 11
-class timeAPE(nn.Module):
+class tAPE(nn.Module):
     def __init__(self, d_model, dropout=0.1, max_len=1024, scale_factor=1.0):
         super(timeAPE, self).__init__()
         self.dropout = nn.Dropout(p=dropout)
