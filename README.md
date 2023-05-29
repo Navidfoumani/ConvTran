@@ -1,10 +1,15 @@
-## ConvTran: Improving Position Encoding of Transformers for Multivariate Time Series Classification
+## Improving Position Encoding of Transformers for Multivariate Time Series Classification (ConvTran)
 #### Authors: [Navid Mohammadi Foumani](https://www.linkedin.com/in/navid-foumani/), [Chang Wei Tan](https://changweitan.com/), [Geoffrey I. Webb](https://i.giwebb.com/), [Mahsa Salehi](https://research.monash.edu/en/persons/mahsa-salehi)
 
 #### ConvTran Paper: [Preprint](https://arxive.org/)
 ## Overview 
+Attention models have the exceptional ability to capture long-range dependencies and their broader receptive fields provide more contextual information, which can improve the models’ learning capacity. However, these models have a limitation when capturing the order of input series. Hence, adding explicit representations of position information is especially important for attention since the model is otherwise entirely invariant to input order, which is undesirable for modeling sequential data. This limitation is particularly challenging in the case of time series data, where the absence of Word2Vec-like embeddings diminishes the availability of informative contextual cues.
+
+The question of whether absolute position encoding, relative position encoding, or a combination of both is more suitable for capturing the sequential nature of time series data remains unresolved. To bridge this gap, our paper reviews existing absolute and relative position encoding methods applied in time series classification. Additionally, we propose two novel position encoding techniques: time Absolute Position Encoding (tAPE) and efficient Relative Position Encoding (eRPE).
+
+
 This is a PyTorch implementation of ConvTran : Deep Learning for Multivariate Time Series Classification Through Tight Integration of Convolutions and Transformers
-![img](https://github.com/Navidfoumani/ConvTran/blob/e41fb4b387ec5c2351df4416fdd326dda7801a1c/Fig/ConvTran.png)
+<!-- ![img](https://github.com/Navidfoumani/ConvTran/blob/e41fb4b387ec5c2351df4416fdd326dda7801a1c/Fig/ConvTran.png) -->
 
 ### Get data from UEA Archive and HAR and Ford Challenge
 Download dataset files and place them into the specified folder
