@@ -1,7 +1,7 @@
 ## Improving Position Encoding of Transformers for Multivariate Time Series Classification (ConvTran)
 #### Authors: [Navid Mohammadi Foumani](https://www.linkedin.com/in/navid-foumani/), [Chang Wei Tan](https://changweitan.com/), [Geoffrey I. Webb](https://i.giwebb.com/), [Mahsa Salehi](https://research.monash.edu/en/persons/mahsa-salehi)
 
-#### ConvTran Paper: [Preprint](https://arxive.org/)
+#### ConvTran Paper: [Preprint](https://arxiv.org/abs/2305.16642v1)
 This is a PyTorch implementation of Improving Position Encoding of Transformers for Multivariate Time Series Classification (ConvTran)
 
 ![img](https://github.com/Navidfoumani/ConvTran/blob/7d77755f59a596b9a62f0aa3ae75fef1edd7d4f2/Fig/ConvTran.png)
@@ -62,8 +62,10 @@ To implement the efficient version of eRFE for input time series with a length o
 </p>
 
 ## Datasets
-### Get data from UEA Archive and HAR and Ford Challenge
-Download dataset files and place them into the specified folder
+We evaluated the ConvTran model using a combination of 30 datasets from the UEA archive and two additional datasets, Actitracker HAR and Ford. To obtain these datasets, you have two options:
+### Manual download:
+You can manually download the datasets using the provided link and place them into the pre-made directory.
+
 UEA: http://www.timeseriesclassification.com/Downloads/Archives/Multivariate2018_ts.zip
 Copy the datasets folder to: Datasets/UEA/
 
@@ -72,6 +74,13 @@ Copy the ActivityRecognition.txt file to : Datasets/Segmentation/ActivityRecogni
 
 Ford: https://www.kaggle.com/competitions/stayalert/data
 Copy the FordChallenge_TEST.csv and FordChallenge_Train.csv to : Datasets/Segmentation/FordChallenge
+
+### Automated setup:
+Alternatively, you can run the `main.py` function, which will automatically download and prepare the data for immediate use. The main function allows you to choose between two dataset options: `Dataset/UEA/` and `Dataset/Segmentation/`.
+
+Additionally, it's important to note that the Ford datasets were obtained from Kaggle. To download them, you will need to register on Kaggle and manually download the datasets. Once downloaded, please place them in the 'Dataset/Large/FordChallenge/' directory.
+
+
 
 ## Setup
 
@@ -91,7 +100,22 @@ For example:
 
 or you can set the paprameters:
 
-`python main.py --epochs 1500 --data_dir Datasets/UEA/Heartbeat`
+`python main.py --epochs 1500 --data_dir Datasets/UEA/`
+
+## Citation
+
+If you find *ConvTran* useful for your research, please consider citing this paper:
+
+````
+```
+@inproceedings{zhang2022self,
+title = {Self-Supervised Contrastive Pre-Training For Time Series via Time-Frequency Consistency},
+author = {Zhang, Xiang and Zhao, Ziyuan and Tsiligkaridis, Theodoros and Zitnik, Marinka},
+booktitle = {Proceedings of Neural Information Processing Systems, NeurIPS},
+year      = {2022}
+}
+```
+````
 
 ## Credits
 
