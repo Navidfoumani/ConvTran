@@ -2,6 +2,9 @@
 #### Authors: [Navid Mohammadi Foumani](https://www.linkedin.com/in/navid-foumani/), [Chang Wei Tan](https://changweitan.com/), [Geoffrey I. Webb](https://i.giwebb.com/), [Mahsa Salehi](https://research.monash.edu/en/persons/mahsa-salehi)
 
 #### ConvTran Paper: [Preprint](https://arxive.org/)
+This is a PyTorch implementation of Improving Position Encoding of Transformers for Multivariate Time Series Classification (ConvTran)
+![img](https://github.com/Navidfoumani/ConvTran/blob/7d77755f59a596b9a62f0aa3ae75fef1edd7d4f2/Fig/ConvTran.png)
+
 ## Overview 
 <p align="justify">
 Attention models have the exceptional ability to capture long-range dependencies and their broader receptive fields provide more contextual information, which can improve the models’ learning capacity. However, these models have a limitation when capturing the order of input series. Hence, adding explicit representations of position information is especially important for attention since the model is otherwise entirely invariant to input order, which is undesirable for modeling sequential data. This limitation is particularly challenging in the case of time series data, where the absence of Word2Vec-like embeddings diminishes the availability of informative contextual cues.
@@ -45,8 +48,7 @@ Without our modification, as series length $L$ increases the dot product of posi
 </p>
 
 #### efficient Relative Position Encoding (eRPE)
-This is a PyTorch implementation of ConvTran : Deep Learning for Multivariate Time Series Classification Through Tight Integration of Convolutions and Transformers
-<!-- ![img](https://github.com/Navidfoumani/ConvTran/blob/e41fb4b387ec5c2351df4416fdd326dda7801a1c/Fig/ConvTran.png) -->
+
 
 ### Get data from UEA Archive and HAR and Ford Challenge
 Download dataset files and place them into the specified folder
