@@ -1,0 +1,6 @@
+HAR : https://www.cis.fordham.edu/wisdm/dataset.php
+Copy the ActivityRecognition.txt file to : Datasets/Segmentation/ActivityRecognition/
+
+Ford: https://www.kaggle.com/competitions/stayalert/data
+Copy the FordChallenge_TEST.csv and FordChallenge_Train.csv to : Datasets/Segmentation/FordChallenge
+

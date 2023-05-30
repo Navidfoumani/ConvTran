@@ -1,0 +1,3 @@
+
+UEA: http://www.timeseriesclassification.com/Downloads/Archives/Multivariate2018_ts.zip
+Copy the datasets folder to: Datasets/UEA/
