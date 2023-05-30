@@ -58,7 +58,7 @@ To implement the efficient version of eRFE for input time series with a length o
 <p align="center">
 <img src="https://github.com/Navidfoumani/ConvTran/blob/fb13d06f166e399b4bf8280838577f3e26f890b9/Fig/eRPE.png" alt="" width="700" height="300">
 </p>
-
+<pre>
 <code>
 class eRPE(nn.Module): # Equation 14 page 12
     def __init__(self, emb_size, num_heads, seq_len, dropout):
@@ -97,6 +97,7 @@ class eRPE(nn.Module): # Equation 14 page 12
         out = self.to_out(out) # out.shape == (batch_size, seq_len, d_model)
         return out
 </code>
+</pre>
 
 ## Datasets
 We evaluated the ConvTran model using a combination of 30 datasets from the UEA archive and two additional datasets, Actitracker HAR and Ford. To obtain these datasets, you have two options:
