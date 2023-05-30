@@ -3,6 +3,7 @@
 
 #### ConvTran Paper: [Preprint](https://arxive.org/)
 This is a PyTorch implementation of Improving Position Encoding of Transformers for Multivariate Time Series Classification (ConvTran)
+
 ![img](https://github.com/Navidfoumani/ConvTran/blob/7d77755f59a596b9a62f0aa3ae75fef1edd7d4f2/Fig/ConvTran.png)
 
 ## Overview 
@@ -46,7 +47,7 @@ class tAPE(nn.Module):
 <p align="justify">
 Without our modification, as series length $L$ increases the dot product of positions becomes ever less regular, resulting in a loss of distance awareness. By incorporating the length parameter in the frequency terms in both sine and cosine functions, the dot product remains smoother with a monotonous trend. As the embedding dimension $d_{model}$ value increases, it is more likely the vector embeddings are sampled from low-frequency sinusoidal functions, which results in the anisotropic phenomenon. To alleviate this, we incorporate the $d_{model}$ parameter into the frequency term in both sine and cosine functions
 </p>
-
+![img](https://github.com/Navidfoumani/ConvTran/blob/59cc5d34576a793bcc03a99d6c6822cd390f4393/Fig/tAPE.png)
 #### efficient Relative Position Encoding (eRPE)
 
 
