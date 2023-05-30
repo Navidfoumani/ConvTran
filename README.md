@@ -108,11 +108,13 @@ If you find *ConvTran* useful for your research, please consider citing this pap
 
 ````
 ```
-@inproceedings{zhang2022self,
-title = {Self-Supervised Contrastive Pre-Training For Time Series via Time-Frequency Consistency},
-author = {Zhang, Xiang and Zhao, Ziyuan and Tsiligkaridis, Theodoros and Zitnik, Marinka},
-booktitle = {Proceedings of Neural Information Processing Systems, NeurIPS},
-year      = {2022}
+@misc{foumani2023improving,
+      title={Improving Position Encoding of Transformers for Multivariate Time Series Classification}, 
+      author={Navid Mohammadi Foumani and Chang Wei Tan and Geoffrey I. Webb and Mahsa Salehi},
+      year={2023},
+      eprint={2305.16642},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
 }
 ```
 ````
