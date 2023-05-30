@@ -97,6 +97,7 @@ class eRPE(nn.Module): # Equation 14 page 12
         out = self.to_out(out) # out.shape == (batch_size, seq_len, d_model)
         return out
 </code>
+
 ## Datasets
 We evaluated the ConvTran model using a combination of 30 datasets from the UEA archive and two additional datasets, Actitracker HAR and Ford. To obtain these datasets, you have two options:
 ### Manual download:
