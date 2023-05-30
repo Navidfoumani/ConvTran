@@ -5,7 +5,6 @@
 This is a PyTorch implementation of Improving Position Encoding of Transformers for Multivariate Time Series Classification (ConvTran)
 
 ![img](https://github.com/Navidfoumani/ConvTran/blob/7d77755f59a596b9a62f0aa3ae75fef1edd7d4f2/Fig/ConvTran.png)
-
 ## Overview 
 <p align="justify">
 Attention models have the exceptional ability to capture long-range dependencies and their broader receptive fields provide more contextual information, which can improve the models’ learning capacity. However, these models have a limitation when capturing the order of input series. Hence, adding explicit representations of position information is especially important for attention since the model is otherwise entirely invariant to input order, which is undesirable for modeling sequential data. This limitation is particularly challenging in the case of time series data, where the absence of Word2Vec-like embeddings diminishes the availability of informative contextual cues.
@@ -47,10 +46,22 @@ class tAPE(nn.Module):
 <p align="justify">
 Without our modification, as series length $L$ increases the dot product of positions becomes ever less regular, resulting in a loss of distance awareness. By incorporating the length parameter in the frequency terms in both sine and cosine functions, the dot product remains smoother with a monotonous trend. As the embedding dimension $d_{model}$ value increases, it is more likely the vector embeddings are sampled from low-frequency sinusoidal functions, which results in the anisotropic phenomenon. To alleviate this, we incorporate the $d_{model}$ parameter into the frequency term in both sine and cosine functions
 </p>
-![img](https://github.com/Navidfoumani/ConvTran/blob/59cc5d34576a793bcc03a99d6c6822cd390f4393/Fig/tAPE.png)
+<p align="center">
+<img src="https://github.com/Navidfoumani/ConvTran/blob/59cc5d34576a793bcc03a99d6c6822cd390f4393/Fig/tAPE.png" alt="" width="700" height="300">
+</p>
+
 #### efficient Relative Position Encoding (eRPE)
+<p align="justify">
+Theoretically, there are many possibilities for integrating relative position information into the attention matrix, but we empirically found that attention models perform better when we add the relative position to the model after applying the softmax to the attention matrix as shown in Equation~\ref{eq:at_rel}. We presume this is because the position values will be sharper without the softmax. And sharper position embeddings seems to be beneficial in TSC task as it emphasizes more on informative relative positions for classification compared to existing models in which softmax is applied to relative position embeddings.
+</p>
+<p align="justify">
+To implement the efficient version of eRFE for input time series with a length of $L$, for each head, we create a trainable parameter $w$ of size $2L-1$, as the maximum distance is $2L-1$. Then for two position indices $i$ and $j$, the corresponding relative scalar is $w_{i-j+L}$ where indexes start from 1 instead of 0 (1-base index). Accordingly, we need to index $L^2$ elements from $2L-1$ vector. 
+</p>
+<p align="center">
+<img src="https://github.com/Navidfoumani/ConvTran/blob/fb13d06f166e399b4bf8280838577f3e26f890b9/Fig/eRPE.png" alt="" width="700" height="300">
+</p>
 
-
+## Datasets
 ### Get data from UEA Archive and HAR and Ford Challenge
 Download dataset files and place them into the specified folder
 UEA: http://www.timeseriesclassification.com/Downloads/Archives/Multivariate2018_ts.zip
