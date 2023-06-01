@@ -135,7 +135,7 @@ This code has been tested with `Python 3.7` and `3.8`.
 ## Run
 
 To see all command options with explanations, run: `python main.py --help`
-In `configuration.py` you can select the datasets and modify the model parameters.
+In `main.py` you can select the datasets and modify the model parameters.
 For example:
 
 `self.parser.add_argument('--epochs', type=int, default=10, help='Number of training epochs')`
