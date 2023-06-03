@@ -146,17 +146,15 @@ or you can set the paprameters:
 
 ## Citation
 
-If you find *ConvTran* useful for your research, please consider citing this paper:
+If you find **ConvTran** useful for your research, please consider citing this paper:
 
 ````
 ```
-@misc{foumani2023improving,
-      title={Improving Position Encoding of Transformers for Multivariate Time Series Classification}, 
-      author={Navid Mohammadi Foumani and Chang Wei Tan and Geoffrey I. Webb and Mahsa Salehi},
-      year={2023},
-      eprint={2305.16642},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+@article{foumani2023improving,
+  title={Improving Position Encoding of Transformers for Multivariate Time Series Classification},
+  author={Foumani, Navid Mohammadi and Tan, Chang Wei and Webb, Geoffrey I and Salehi, Mahsa},
+  journal={arXiv preprint arXiv:2305.16642},
+  year={2023}
 }
 ```
 ````
