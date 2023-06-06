@@ -145,8 +145,7 @@ or you can set the paprameters:
 `python main.py --epochs 1500 --data_dir Datasets/UEA/`
 
 ## Citation
-
-If you find **ConvTran** useful for your research, please consider citing this paper:
+If you find **ConvTran** useful for your research, please consider citing this paper using the following information (we will update it with the Data Mining and Knowledge Discovery version when it is published):
 
 ````
 ```
