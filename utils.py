@@ -72,7 +72,7 @@ def Initialization(config):
 
 
 def Data_Loader(config):
-    if config['data_dir'].split('/')[1] == 'Large':
+    if config['data_dir'].split('/')[1] == 'Segmentation':
         Data = load_segment_data.load(config)  # Load HAR (WISDM V2) and Ford Datasets
     else:
         Data = load_UEA_data.load(config)  # Load UEA *.ts Data
