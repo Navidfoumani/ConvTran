@@ -116,9 +116,10 @@ Copy the ActivityRecognition.txt file to : Datasets/Segmentation/ActivityRecogni
 
 Ford: https://www.kaggle.com/competitions/stayalert/data
 Copy the FordChallenge_TEST.csv and FordChallenge_Train.csv to : Datasets/Segmentation/FordChallenge
+(Please refer to the "Dataset/Segmentation/Segmentation.txt" file for detailed instructions)
 
 ### Automated setup:
-Alternatively, you can run the `main.py` function, which will automatically download and prepare the data for immediate use. The main function allows you to choose between two dataset options: `Dataset/UEA/` and `Dataset/Segmentation/`.
+Alternatively, you can run the `main.py` function, which will automatically download and prepare the data for immediate use. The main function allows you to choose between two dataset options: `Dataset/UEA/`.
 
 Additionally, it's important to note that the Ford datasets were obtained from Kaggle. To download them, you will need to register on Kaggle and manually download the datasets. Once downloaded, please place them in the 'Dataset/Large/FordChallenge/' directory.
 
