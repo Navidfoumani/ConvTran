@@ -1,6 +1,29 @@
-HAR : https://www.cis.fordham.edu/wisdm/dataset.php
+HAR dataset: Access the dataset from https://www.cis.fordham.edu/wisdm/dataset.php
 Copy the ActivityRecognition.txt file to : Datasets/Segmentation/ActivityRecognition/
 
-Ford: https://www.kaggle.com/competitions/stayalert/data
-Copy the FordChallenge_TEST.csv and FordChallenge_Train.csv to : Datasets/Segmentation/FordChallenge
 
+Ford dataset:
+Access the dataset from the following Kaggle competition link: https://www.kaggle.com/competitions/stayalert/data.
+Download the "stayalert.zip", which contains the following files:
+Solution.csv
+fordTrain.csv
+fordTest.csv
+
+Labeling the test data:
+The file fordTest.csv does not have labels. To assign labels to the test data, follow these steps:
+Open the Solution.csv file.
+Copy the contents of the prediction columns.
+Paste the copied prediction values into the "ISAlert" column of the fordTest.csv file.
+Renaming and copying files:
+
+Rename the fordTrain.csv and fordTest.csv files to FordChallenge_Train.csv and FordChallenge_Test.csv, respectively.
+Copy the FordChallenge_Train.csv and FordChallenge_Test.csv files to the following directory: Datasets/Segmentation/FordChallenge.
+Column renaming:
+
+Open the FordChallenge_Train.csv and FordChallenge_Test.csv files.
+Rename the following columns:
+"TrialID" to "series"
+"obsNum" to "timestamp"
+"IsAlert" to "label"
+
+Finally: Copy the FordChallenge_TEST.csv and FordChallenge_Train.csv to: Datasets/Segmentation/FordChallenge
