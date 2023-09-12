@@ -11,10 +11,6 @@ This is a PyTorch implementation of Improving Position Encoding of Transformers 
 The question of whether absolute position encoding, relative position encoding, or a combination of both is more suitable for capturing the sequential nature of time series data remains unresolved. To bridge this gap, our paper reviews existing absolute and relative position encoding methods applied in time series classification. Additionally, we propose two novel position encoding techniques: time Absolute Position Encoding (tAPE) and efficient Relative Position Encoding (eRPE).
 </p>
 
-<p align="justify">
-We then propose a novel multivariate time series classification (MTSC) model combining tAPE/eRPE and convolution-based input encoding named ConvTran to improve the position and data embedding of time series data. The proposed absolute and relative position encoding methods are simple and efficient. They can be easily integrated into transformer blocks and used for downstream tasks such as forecasting, extrinsic regression, and anomaly detection. Extensive experiments on 32 multivariate time-series datasets show that our model is significantly more accurate than state-of-the-art convolution and transformer-based models.
-</p>
-
 ### Key Idea of Position Encoding of Transformers for MTSC
 #### time Absolute Position Encoding (tAPE)
 <p align="justify">
