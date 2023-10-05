@@ -1,7 +1,10 @@
 ## Improving Position Encoding of Transformers for Multivariate Time Series Classification (ConvTran)
 #### Authors: [Navid Mohammadi Foumani](https://www.linkedin.com/in/navid-foumani/), [Chang Wei Tan](https://changweitan.com/), [Geoffrey I. Webb](https://i.giwebb.com/), [Mahsa Salehi](https://research.monash.edu/en/persons/mahsa-salehi)
-#### ✨ **News:** This work has been accepted for publication in [Data Mining and Knowledge Discovery](https://www.springer.com/journal/10618).
-#### ConvTran Paper: [Preprint](https://arxiv.org/abs/2305.16642v1)
+
+#### 🏆 **Best Paper Award**: Our paper has been selected among the [🌟best papers🌟](https://2023.ecmlpkdd.org/program/paper-session-overview/program-20-september-2023/) in the Journal Track of #ECML_PKDD2023!
+#### ✨ **News:** This work has been accepted for publication in [Data Mining and Knowledge Discovery](https://link.springer.com/article/10.1007/s10618-023-00948-2).
+
+#### ConvTran Paper: [PDF](https://link.springer.com/article/10.1007/s10618-023-00948-2)
 
 This is a PyTorch implementation of Improving Position Encoding of Transformers for Multivariate Time Series Classification (ConvTran)
 ![img](https://github.com/Navidfoumani/ConvTran/blob/7d77755f59a596b9a62f0aa3ae75fef1edd7d4f2/Fig/ConvTran.png)
@@ -143,11 +146,19 @@ If you find **ConvTran** useful for your research, please consider citing this p
 
 ````
 ```
-@article{foumani2023improving,
-  title={Improving Position Encoding of Transformers for Multivariate Time Series Classification},
-  author={Foumani, Navid Mohammadi and Tan, Chang Wei and Webb, Geoffrey I and Salehi, Mahsa},
-  journal={arXiv preprint arXiv:2305.16642},
-  year={2023}
+@article{Foumani2023,
+    author={Foumani, Navid Mohammadi
+            and Tan, Chang Wei
+            and Webb, Geoffrey I.
+            and Salehi, Mahsa},
+    title={Improving position encoding of transformers for multivariate time series classification},
+    journal={Data Mining and Knowledge Discovery},
+    year={2023},
+    month={Sep},
+    day={05},
+    issn={1573-756X},
+    doi={10.1007/s10618-023-00948-2},
+    url={https://doi.org/10.1007/s10618-023-00948-2}
 }
 ```
 ````
