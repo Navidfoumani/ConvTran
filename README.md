@@ -4,7 +4,8 @@
 #### 🏆 **Best Paper Award** 🏆: Selected among the [🌟best papers🌟](https://2023.ecmlpkdd.org/program/paper-session-overview/program-20-september-2023/) in the Journal Track of #ECML_PKDD2023!
 #### ✨ **News:** This work has been accepted for publication in [Data Mining and Knowledge Discovery](https://link.springer.com/article/10.1007/s10618-023-00948-2).
 
-#### ConvTran Paper: [PDF](https://link.springer.com/article/10.1007/s10618-023-00948-2)
+#### ConvTran Paper: [PDF](https://link.springer.com/content/pdf/10.1007/s10618-023-00948-2.pdf)
+
 
 This is a PyTorch implementation of Improving Position Encoding of Transformers for Multivariate Time Series Classification (ConvTran)
 ![img](https://github.com/Navidfoumani/ConvTran/blob/7d77755f59a596b9a62f0aa3ae75fef1edd7d4f2/Fig/ConvTran.png)
