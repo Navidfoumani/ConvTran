@@ -147,7 +147,7 @@ If you find **ConvTran** useful for your research, please consider citing this p
 
 ````
 ```
-@article{Foumani2023,
+@article{ConvTran2023,
     author={Foumani, Navid Mohammadi
             and Tan, Chang Wei
             and Webb, Geoffrey I.
