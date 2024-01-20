@@ -6,9 +6,10 @@
 
 #### ConvTran Paper: [PDF](https://link.springer.com/content/pdf/10.1007/s10618-023-00948-2.pdf)
 
-
 This is a PyTorch implementation of Improving Position Encoding of Transformers for Multivariate Time Series Classification (ConvTran)
-![img](https://github.com/Navidfoumani/ConvTran/blob/7d77755f59a596b9a62f0aa3ae75fef1edd7d4f2/Fig/ConvTran.png)
+<p align="center">
+    <img src="Fig/ConvTran.png">
+</p>    
 ## Overview 
 
 <p align="justify">
