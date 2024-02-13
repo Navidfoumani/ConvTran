@@ -155,16 +155,19 @@ If you find **ConvTran** useful for your research, please consider citing this p
             and Salehi, Mahsa},
     title={Improving position encoding of transformers for multivariate time series classification},
     journal={Data Mining and Knowledge Discovery},
-    year={2023},
-    month={Sep},
-    day={05},
+    year={2024},
+    month={Jan},
+    volume={38},
+    number={1},
+    pages={22–48}
     issn={1573-756X},
     doi={10.1007/s10618-023-00948-2},
     url={https://doi.org/10.1007/s10618-023-00948-2}
 }
+
 ```
 ````
 
 ## Credits
 
-Some Part of Code are taken from [TST](https://github.com/gzerveas/mvts_transformer).
+Some Parts of the Code are taken from [TST](https://github.com/gzerveas/mvts_transformer).
