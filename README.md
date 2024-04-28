@@ -106,7 +106,7 @@ We evaluated the ConvTran model using a combination of 30 datasets from the UEA 
 ### Manual download:
 You can manually download the datasets using the provided link and place them into the pre-made directory.
 
-UEA: http://www.timeseriesclassification.com/Downloads/Archives/Multivariate2018_ts.zip
+UEA: https://www.timeseriesclassification.com/aeon-toolkit/Archives/Multivariate2018_ts.zip
 Copy the datasets folder to: Datasets/UEA/
 
 HAR : https://www.cis.fordham.edu/wisdm/dataset.php
