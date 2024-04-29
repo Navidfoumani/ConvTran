@@ -37,8 +37,8 @@ class tAPE(nn.Module):
         Args:
             x: the sequence fed to the positional encoder model (required).
         Shape:
-            x: [sequence length, batch size, embed dim]
-            output: [sequence length, batch size, embed dim]
+            x: [batch size, sequence length, embed dim]
+            output: [batch size, sequence length, embed dim]
         """
         x = x + self.pe
         return self.dropout(x)
