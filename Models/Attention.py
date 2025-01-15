@@ -77,7 +77,7 @@ class Attention_Rel_Scl(nn.Module):
         attn = nn.functional.softmax(attn, dim=-1)
 
         # Use "gather" for more efficiency on GPUs
-        relative_bias = self.relative_bias_table.gather(0, self.relative_index.repeat(1, 8))
+        relative_bias = self.relative_bias_table.gather(0, self.relative_index.repeat(1, self.num_heads))
         relative_bias = rearrange(relative_bias, '(h w) c -> 1 c h w', h=1 * self.seq_len, w=1 * self.seq_len)
         attn = attn + relative_bias
 
