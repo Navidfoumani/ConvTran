@@ -4,7 +4,8 @@ import logging
 import random
 from sklearn import model_selection
 from sklearn.preprocessing import StandardScaler, LabelEncoder
-from sktime.utils.load_data import load_from_tsfile_to_dataframe
+from sktime.datasets import load_from_tsfile_to_dataframe
+
 
 logger = logging.getLogger(__name__)
 
