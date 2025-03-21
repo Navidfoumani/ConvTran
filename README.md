@@ -9,7 +9,8 @@
 This is a PyTorch implementation of Improving Position Encoding of Transformers for Multivariate Time Series Classification (ConvTran)
 <p align="center">
     <img src="Fig/ConvTran.png">
-</p>    
+</p>
+
 ## Overview 
 
 <p align="justify">
